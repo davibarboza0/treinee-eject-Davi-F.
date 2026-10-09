@@ -1,6 +1,3 @@
-/* ==========================================================================
-   ESTILOS EXCLUSIVOS DA PÁGINA DE ACERVO / CATÁLOGO
-   ========================================================================== */
 :root {
     --vinho-principal: #81013A;
     --vinho-escuro: #5C001C;
@@ -24,9 +21,6 @@ body {
     color: var(--texto-escuro);
 }
 
-/* ==========================================================================
-   1. NAVBAR SUPERIOR
-   ========================================================================== */
 .header-container {
     width: 100%;
     display: flex;
@@ -103,18 +97,12 @@ body {
     display: block;
 }
 
-/* ==========================================================================
-   2. CONTEÚDO PRINCIPAL
-   ========================================================================== */
 .conteudo-principal {
     max-width: 1080px;
     margin: 0 auto;
     padding: 30px 20px 80px 20px;
 }
 
-/* ==========================================================================
-   3. SECÇÃO: NOVIDADES DA SEMANA
-   ========================================================================== */
 .novidades-secao {
     display: flex;
     align-items: center;
@@ -215,9 +203,6 @@ body {
     color: rgba(255, 255, 255, 0.8);
 }
 
-/* ==========================================================================
-   4. SECÇÃO: CATÁLOGO E BUSCA
-   ========================================================================== */
 .catalogo-secao {
     width: 100%;
 }
@@ -229,7 +214,6 @@ body {
     margin-bottom: 25px;
 }
 
-/* BARRA DE BUSCA E FILTROS */
 .container-busca {
     width: 100%;
     display: flex;
@@ -292,7 +276,6 @@ body {
     opacity: 0.9;
 }
 
-/* GRID DO CATÁLOGO */
 .grid-container-relativo {
     position: relative;
     width: 100%;
@@ -318,7 +301,6 @@ body {
     transform: translateY(-4px);
 }
 
-/* BOTÃO FLUTUANTE ADICIONAR (+) */
 .btn-flutuante-adicionar {
     position: absolute;
     right: -18px;
@@ -336,7 +318,6 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* PLACEHOLDERS DAS CAPAS (TODAS PRETAS POR ENQUANTO) */
 .capa-placeholder {
     width: 100%;
     height: 100%;
@@ -362,7 +343,6 @@ body {
     background-color: #000000;
 }
 
-/* PAGINAÇÃO */
 .paginacao {
     display: flex;
     align-items: center;
@@ -401,9 +381,6 @@ body {
     cursor: pointer;
 }
 
-/* ==========================================================================
-   5. FOOTER / RODAPÉ
-   ========================================================================== */
 .rodape {
     background-color: var(--vinho-principal);
     color: var(--branco);
@@ -477,9 +454,6 @@ body {
     opacity: 0.6;
 }
 
-/* ==========================================================================
-   6. RESPONSIVIDADE PEQUENA
-   ========================================================================== */
 @media (max-width: 900px) {
     .novidades-secao {
         flex-direction: column;

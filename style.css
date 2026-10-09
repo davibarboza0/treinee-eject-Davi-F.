@@ -1,6 +1,3 @@
-/* ==========================================================================
-   1. VARIÁVEIS E CONFIGURAÇÕES DE BASE
-   ========================================================================== */
 :root {
     --marrom: #7A3B05;
     --laranja: #F78420;
@@ -23,9 +20,6 @@ body {
     background-color: var(--marrom);
 }
 
-/* ==========================================================================
-   2. LAYOUT PRINCIPAL (SPLIT-SCREEN)
-   ========================================================================== */
 .pagina-login {
     display: flex;
     width: 100vw;
@@ -33,9 +27,6 @@ body {
     overflow: hidden;
 }
 
-/* ==========================================================================
-   3. PAINEL ESQUERDO (ILUSTRAÇÕES E LOGO)
-   ========================================================================== */
 .painel-ilustracao {
     flex: 1;
     height: 100vh;
@@ -44,7 +35,6 @@ body {
     overflow: hidden;
 }
 
-/* Laço */
 .ilustracao-laco {
     position: absolute;
     left: 0;
@@ -58,7 +48,6 @@ body {
     z-index: 1;
 }
 
-/* Bota / Tênis */
 .ilustracao-bota {
     position: absolute;
     left: 500px;
@@ -71,7 +60,6 @@ body {
     z-index: 2;
 }
 
-/* Logo TheKa no Rodapé */
 .logo {
     position: absolute;
     width: 245px;
@@ -82,9 +70,6 @@ body {
     z-index: 10;
 }
 
-/* ==========================================================================
-   4. PAINEL DIREITO (PAINEL BRANCO DOS FORMULÁRIOS)
-   ========================================================================== */
 .painel-login {
     width: 42%;
     min-width: 420px;
@@ -111,9 +96,6 @@ body {
     margin-bottom: 40px;
 }
 
-/* ==========================================================================
-   5. CAMPOS DE FORMULÁRIO E INPUTS
-   ========================================================================== */
 .campo {
     margin-bottom: 25px;
 }
@@ -148,7 +130,6 @@ body {
     color: var(--placeholder);
 }
 
-/* Ícone do Olho para Senhas */
 .btn-olho {
     position: absolute;
     right: 14px;
@@ -160,10 +141,6 @@ body {
     justify-content: center;
 }
 
-/* ==========================================================================
-   6. NAVEGAÇÃO E BOTÕES
-   ========================================================================== */
-/* Links na tela de Login */
 .acoes-links {
     display: flex;
     flex-direction: column;
@@ -184,13 +161,11 @@ body {
     text-decoration: underline;
 }
 
-/* Botão Único (Entrar) */
 .container-botao {
     display: flex;
     justify-content: flex-end;
 }
 
-/* Grupo de Botões (Voltar / Cancelar + Salvar / Enviar) */
 .grupo-botoes {
     display: flex;
     justify-content: flex-end;
@@ -199,7 +174,6 @@ body {
     margin-top: 35px;
 }
 
-/* Botão Secundário (Voltar / Cancelar) */
 .botao-voltar {
     background-color: transparent;
     color: var(--laranja);
@@ -220,7 +194,6 @@ body {
     background-color: rgba(247, 132, 32, 0.08);
 }
 
-/* Botão Principal Laranja (Entrar / Enviar / Salvar) */
 .botao-login {
     background-color: var(--laranja);
     color: var(--branco);
@@ -237,9 +210,6 @@ body {
     opacity: 0.9;
 }
 
-/* ==========================================================================
-   7. RESPONSIVIDADE (DISPOSITIVOS MÓVEIS - BREAKPOINT 768px)
-   ========================================================================== */
 @media (max-width: 768px) {
     .pagina-login {
         flex-direction: column;
@@ -276,7 +246,6 @@ body {
         bottom: 20px;
     }
 
-    /* Painel Branco ajustado às especificações móveis (393px x 660px) */
     .painel-login {
         width: 100%;
         max-width: 393px;
