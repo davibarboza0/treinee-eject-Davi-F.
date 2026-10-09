@@ -51,7 +51,7 @@ body {
 .nav-brand {
     display: flex;
     align-items: center;
-    min-width: 34px; /* Mantém o alinhamento proporcional com os outros itens */
+    min-width: 34px;
 }
 
 .nav-links {
@@ -172,7 +172,7 @@ body {
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: rgba(255, 255, 255, 0.25);
     border: none;
     color: var(--branco);
     display: flex;
@@ -188,7 +188,7 @@ body {
     width: 22px;
     height: 22px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.25);
     border: none;
     color: var(--branco);
     display: flex;
@@ -203,7 +203,7 @@ body {
     left: 15px;
     font-size: 13px;
     font-weight: 800;
-    color: #111111;
+    color: var(--branco);
 }
 
 .autor-livro-destaque {
@@ -212,7 +212,7 @@ body {
     left: 15px;
     font-size: 11px;
     font-weight: 700;
-    color: #333333;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 /* ==========================================================================
@@ -336,28 +336,31 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* CORES DOS PLACEHOLDERS DAS CAPAS */
+/* PLACEHOLDERS DAS CAPAS (TODAS PRETAS POR ENQUANTO) */
 .capa-placeholder {
     width: 100%;
     height: 100%;
     position: relative;
+    background-color: #000000;
 }
 
-.capa-placeholder.amarelo { background-color: #FCD300; }
-.capa-placeholder.azul { background-color: #79B8D8; }
-.capa-placeholder.verde { background-color: #2F6B38; }
-.capa-placeholder.laranja { background-color: #E28135; }
-.capa-placeholder.bege { background-color: #C3996A; }
-.capa-placeholder.rosa { background-color: #E08796; }
-.capa-placeholder.azul-escuro { background-color: #4C6E8D; }
-.capa-placeholder.verde-escuro { background-color: #3B5848; }
-.capa-placeholder.flor { background-color: #7A5775; }
-.capa-placeholder.verde-agua { background-color: #39918C; }
-.capa-placeholder.escuro { background-color: #1A1A1A; }
-.capa-placeholder.bege-escuro { background-color: #E7CBB2; }
-.capa-placeholder.cinza { background-color: #D6D6D6; }
-.capa-placeholder.verde-vibrante { background-color: #00B189; }
-.capa-placeholder.pb { background-color: #555555; }
+.capa-placeholder.amarelo,
+.capa-placeholder.azul,
+.capa-placeholder.verde,
+.capa-placeholder.laranja,
+.capa-placeholder.bege,
+.capa-placeholder.rosa,
+.capa-placeholder.azul-escuro,
+.capa-placeholder.verde-escuro,
+.capa-placeholder.flor,
+.capa-placeholder.verde-agua,
+.capa-placeholder.escuro,
+.capa-placeholder.bege-escuro,
+.capa-placeholder.cinza,
+.capa-placeholder.verde-vibrante,
+.capa-placeholder.pb {
+    background-color: #000000;
+}
 
 /* PAGINAÇÃO */
 .paginacao {
