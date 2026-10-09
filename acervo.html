@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheKa - Acervo</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./acervo.css">
+</head>
+<body>
+
+    <!-- NAVBAR SUPERIOR -->
+    <header class="header-container">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <!-- Sem logo no topo por enquanto -->
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="./acervo.html" class="nav-item active">Acervo</a></li>
+                <li><a href="#" class="nav-item">Sobre nós</a></li>
+            </ul>
+
+            <div class="nav-user">
+                <button class="btn-usuario" aria-label="Perfil do usuário">
+                    <img src="./usuario.png" alt="Usuário" class="icone-usuario">
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="conteudo-principal">
+
+        <!-- NOVIDADES DA SEMANA -->
+        <section class="novidades-secao">
+            <div class="novidades-info">
+                <h1>Novidades<br>da semana</h1>
+                <div class="destaque-detalhe">
+                    <h2>A cabeça do santo</h2>
+                    <p>Socorro Acioli - 2014</p>
+                </div>
+            </div>
+
+            <div class="novidades-carrossel">
+                <div class="card-livro-destaque">
+                    <div class="capa-placeholder amarelo">
+                        <button class="btn-card-arrow" aria-label="Ver livro">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </button>
+                        <span class="titulo-livro-destaque">A CABEÇA DO SANTO</span>
+                        <span class="autor-livro-destaque">SOCORRO ACIOLI</span>
+                    </div>
+                </div>
+
+                <div class="card-livro-mini">
+                    <div class="capa-placeholder verde">
+                        <button class="btn-card-arrow-sm" aria-label="Ver livro">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card-livro-mini">
+                    <div class="capa-placeholder escuro">
+                        <button class="btn-card-arrow-sm" aria-label="Ver livro">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card-livro-mini">
+                    <div class="capa-placeholder bege">
+                        <button class="btn-card-arrow-sm" aria-label="Ver livro">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card-livro-mini">
+                    <div class="capa-placeholder azul">
+                        <button class="btn-card-arrow-sm" aria-label="Ver livro">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CATÁLOGO E BUSCA -->
+        <section class="catalogo-secao">
+            <h2 class="titulo-secao">Veja nosso catálogo</h2>
+
+            <!-- BARRA DE BUSCA E FILTROS -->
+            <div class="container-busca">
+                <input type="text" placeholder="Fazer busca" class="input-busca">
+
+                <div class="filtros-grupo">
+                    <select class="select-filtro">
+                        <option value="" disabled selected>Gênero</option>
+                        <option value="ficcao">Ficção</option>
+                        <option value="romance">Romance</option>
+                        <option value="fantasia">Fantasia</option>
+                    </select>
+
+                    <select class="select-filtro">
+                        <option value="" disabled selected>Editora</option>
+                        <option value="companhia">Companhia das Letras</option>
+                        <option value="intrinseca">Intrínseca</option>
+                    </select>
+
+                    <button class="btn-buscar">
+                        Buscar
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- GRID DE LIVROS -->
+            <div class="grid-container-relativo">
+                <div class="grid-catalogo">
+                    <div class="card-catalogo"><div class="capa-placeholder amarelo"></div></div>
+                    <div class="card-catalogo"><div class="capa-placeholder azul"></div></div>
+                    <div class="card-catalogo"><div class="capa-placeholder verde"></div></div>
+                    <div class="card-catalogo"><div class="capa-placeholder laranja"></div></div>
+                    <div class="card-catalogo"><div class="capa-placeholder bege"></div></div>
+
+                    <div class="card-catalogo"><div class="capa-placeholder rosa"></div></div>
+                    <div class="card-catalogo"><div class="capa-placeholder azul-escuro"></div></div>
+                    <div class="card-catalogo"><div class="capa-placeholder verde-escuro"></div></div>
+                    <div class="card-catalogo"><div class="capa-placeholder flor"></div></div>
+                    <div class="card-catalogo"><div class="capa-placeholder verde-agua"></div></div>
+
+                    <div class="card-catalogo"><div class="capa-placeholder escuro"></div></div>
+                    <div class="card-catalogo"><div class="capa-placeholder bege-escuro"></div></div>
+                    <div class="card-catalogo"><div class="capa-placeholder cinza"></div></div>
+                    <div class="card-catalogo"><div class="capa-placeholder verde-vibrante"></div></div>
+                    <div class="card-catalogo"><div class="capa-placeholder pb"></div></div>
+                </div>
+
+                <button class="btn-flutuante-adicionar" aria-label="Adicionar livro">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                </button>
+            </div>
+
+            <!-- PAGINAÇÃO -->
+            <div class="paginacao">
+                <button class="page-arrow" aria-label="Página anterior">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                </button>
+                <span class="page-num">1</span>
+                <span class="page-num active">2</span>
+                <span class="page-num">3</span>
+                <button class="page-arrow" aria-label="Próxima página">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER EM HTML / ESTRUTURADO -->
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+            
+            <div class="coluna-rodape brand-coluna">
+                <img src="./imagemPacervo.png" alt="TheKa Logo" class="logo-rodape">
+                <p class="slogan-rodape">Aventuras literárias.</p>
+            </div>
+
+            <div class="coluna-rodape">
+                <h3>Contato</h3>
+                <ul>
+                    <li>
+                        <img src="./telefone.png" alt="Telefone" class="icone-rodape">
+                        (84) 9 9999-2222
+                    </li>
+                    <li>
+                        <img src="./site.png" alt="Site" class="icone-rodape">
+                        www.theka.com.br
+                    </li>
+                    <li>
+                        <img src="./local.png" alt="Localização" class="icone-rodape">
+                        Natal, RN
+                    </li>
+                </ul>
+            </div>
+
+            <div class="coluna-rodape">
+                <h3>Redes sociais</h3>
+                <ul>
+                    <li>
+                        <img src="./instagram.png" alt="Instagram" class="icone-rodape">
+                        <a href="#">@theka.biblioteca</a>
+                    </li>
+                    <li>
+                        <img src="./tiktok.png" alt="TikTok" class="icone-rodape">
+                        <a href="#">@theka.biblioteca</a>
+                    </li>
+                    <li>
+                        <img src="./twiter.png" alt="X / Twitter" class="icone-rodape">
+                        <a href="#">@theka.biblioteca</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="coluna-rodape">
+                <h3>Ajuda</h3>
+                <ul>
+                    <li>
+                        <img src="./ajuda.png" alt="Central de ajuda" class="icone-rodape">
+                        <a href="#">Central de ajuda</a>
+                    </li>
+                    <li>
+                        <img src="./faq.png" alt="FAQ" class="icone-rodape">
+                        <a href="#">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="rodape-creditos">
+            <p>Mockup desenvolvido por EJECT</p>
+        </div>
+    </footer>
+
+</body>
+</html>

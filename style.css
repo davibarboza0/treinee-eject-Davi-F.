@@ -1,0 +1,288 @@
+/* ==========================================================================
+   1. VARIÁVEIS E CONFIGURAÇÕES DE BASE
+   ========================================================================== */
+:root {
+    --marrom: #7A3B05;
+    --laranja: #F78420;
+    --branco: #FFFFFF;
+    --texto-label: #F78420;
+    --placeholder: #D1D1D1;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--marrom);
+}
+
+/* ==========================================================================
+   2. LAYOUT PRINCIPAL (SPLIT-SCREEN)
+   ========================================================================== */
+.pagina-login {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   3. PAINEL ESQUERDO (ILUSTRAÇÕES E LOGO)
+   ========================================================================== */
+.painel-ilustracao {
+    flex: 1;
+    height: 100vh;
+    background-color: var(--marrom);
+    position: relative; 
+    overflow: hidden;
+}
+
+/* Laço */
+.ilustracao-laco {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-55%);
+    width: 580px;
+    max-width: 80%;
+    height: auto;
+    object-fit: contain;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Bota / Tênis */
+.ilustracao-bota {
+    position: absolute;
+    left: 500px;
+    top: 50%;
+    transform: translateY(-10%) rotate(-8deg);
+    width: 270px;
+    height: auto;
+    object-fit: contain;
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* Logo TheKa no Rodapé */
+.logo {
+    position: absolute;
+    width: 245px;
+    height: 67.95px;
+    bottom: 50px;
+    left: 93px;
+    object-fit: contain;
+    z-index: 10;
+}
+
+/* ==========================================================================
+   4. PAINEL DIREITO (PAINEL BRANCO DOS FORMULÁRIOS)
+   ========================================================================== */
+.painel-login {
+    width: 42%;
+    min-width: 420px;
+    height: 100vh;
+    background-color: var(--branco);
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    z-index: 10;
+}
+
+.conteudo-login {
+    width: 100%;
+    max-width: 320px;
+}
+
+.conteudo-login h1 {
+    color: var(--laranja);
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+/* ==========================================================================
+   5. CAMPOS DE FORMULÁRIO E INPUTS
+   ========================================================================== */
+.campo {
+    margin-bottom: 25px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--texto-label);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.campo input {
+    width: 100%;
+    height: 38px;
+    padding: 0 20px;
+    border: 1.5px solid var(--laranja);
+    border-radius: 50px;
+    font-size: 13px;
+    color: #444444;
+    outline: none;
+    background-color: var(--branco);
+}
+
+.campo input::placeholder {
+    color: var(--placeholder);
+}
+
+/* Ícone do Olho para Senhas */
+.btn-olho {
+    position: absolute;
+    right: 14px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==========================================================================
+   6. NAVEGAÇÃO E BOTÕES
+   ========================================================================== */
+/* Links na tela de Login */
+.acoes-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.link-laranja {
+    color: var(--laranja);
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.link-laranja:hover {
+    text-decoration: underline;
+}
+
+/* Botão Único (Entrar) */
+.container-botao {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Grupo de Botões (Voltar / Cancelar + Salvar / Enviar) */
+.grupo-botoes {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    margin-top: 35px;
+}
+
+/* Botão Secundário (Voltar / Cancelar) */
+.botao-voltar {
+    background-color: transparent;
+    color: var(--laranja);
+    border: 1.5px solid var(--laranja);
+    border-radius: 50px;
+    padding: 9px 24px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.botao-voltar:hover {
+    background-color: rgba(247, 132, 32, 0.08);
+}
+
+/* Botão Principal Laranja (Entrar / Enviar / Salvar) */
+.botao-login {
+    background-color: var(--laranja);
+    color: var(--branco);
+    border: none;
+    border-radius: 50px;
+    padding: 10px 28px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.botao-login:hover {
+    opacity: 0.9;
+}
+
+/* ==========================================================================
+   7. RESPONSIVIDADE (DISPOSITIVOS MÓVEIS - BREAKPOINT 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .pagina-login {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        min-height: 100vh;
+        overflow-y: auto;
+    }
+
+    .painel-ilustracao {
+        width: 100%;
+        height: 250px;
+        min-height: 250px;
+    }
+
+    .ilustracao-laco {
+        width: 280px;
+        left: 0;
+        top: 20px;
+        transform: none;
+    }
+
+    .ilustracao-bota {
+        width: 140px;
+        left: 200px;
+        top: 60px;
+        transform: none;
+    }
+
+    .logo {
+        width: 160px;
+        height: auto;
+        left: 20px;
+        bottom: 20px;
+    }
+
+    /* Painel Branco ajustado às especificações móveis (393px x 660px) */
+    .painel-login {
+        width: 100%;
+        max-width: 393px;
+        height: 660px;
+        min-width: unset;
+        border-radius: 30px 30px 0 0;
+        padding: 40px 30px;
+    }
+}

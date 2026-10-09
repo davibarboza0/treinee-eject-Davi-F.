@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheKa - Recuperar Senha</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="pagina-login">
+
+        <!-- PAINEL ESQUERDO (MARROM) -->
+        <section class="painel-ilustracao">
+            <img 
+                src="./laçoLogo.png" 
+                alt="Ilustração do Laço TheKa" 
+                class="ilustracao-laco"
+            >
+            <img 
+                src="./botalaço.png" 
+                alt="Ilustração Bota TheKa" 
+                class="ilustracao-bota"
+            >
+            <img 
+                src="./logoP.png" 
+                alt="Logo TheKa" 
+                class="logo"
+            >
+        </section>
+
+        <!-- PAINEL DIREITO (FORMULÁRIO BRANCO DE RECUPERAÇÃO) -->
+        <section class="painel-login">
+            <div class="conteudo-login">
+
+                <h1>Recuperar senha</h1>
+
+                <!-- FORMULÁRIO DIRECIONANDO PARA REDEFINIR-SENHA.HTML -->
+                <form action="./redefinir-senha.html">
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="seuemail@email.com"
+                            autocomplete="email"
+                            required
+                        >
+                    </div>
+
+                    <div class="grupo-botoes">
+                        <a href="./index.html" class="botao-voltar">Voltar</a>
+                        <button type="submit" class="botao-login">Enviar</button>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
